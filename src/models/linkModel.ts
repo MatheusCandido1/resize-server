@@ -4,9 +4,9 @@ import database from '../database';
 
 interface IlinkCreationAttributes extends Optional<Link, "id">{}
 
-export interface IlinkModel extends Model<Link, IlinkCreationAttributes>, Link {}
+export interface ILinkModel extends Model<Link, IlinkCreationAttributes>, Link {}
 
-const LinkModel = database.define<IlinkModel>('link', {
+const LinkModel = database.define<ILinkModel>('link', {
     id: {
         type: Sequelize.INTEGER.UNSIGNED,
         primaryKey: true,
