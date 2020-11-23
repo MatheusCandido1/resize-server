@@ -2,15 +2,15 @@ import {Router} from 'express';
 
 const router = Router();
 
-router.post('links', (req, res) => {
+router.post('/links', (req, res) => {
     res.send('POST');
 })
 
-router.get('links/:code', (req,res) => {
+router.get('/links/:code', (req,res) => {
     res.send('GET');
 })
 
-router.get('links/:code/stats', (req, res) => {
+router.get('/links/:code/stats', (req, res) => {
     res.send('GET Stats');
 })
 
